@@ -20,7 +20,10 @@ ballsArray.forEach(ball =>{
 
 const render = ()=>{
     ballsArray.forEach((ball)=>{
+        ball.move();
         ball.draw();
+
+        ball.checkCollisionWall(0, 0, VIEWPORT_WIDTH, VIEWPORT_HEIGHT);
     })
     requestAnimationFrame(render);
 }
