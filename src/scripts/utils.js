@@ -12,6 +12,20 @@ const getRandom = (min, max)=>{
 
 
 /**
+ * Returns a random color in hex format.
+ * @returns {string} Random color.
+ */
+const getRandomColor = () => {
+    const letters = '0123456789ABCDEF';
+    let color = '#';
+    for (let i = 0; i < 6; i++) {
+        color += letters[Math.floor(Math.random() * 16)];
+    }
+    return color;
+};
+
+
+/**
  * 
  * @param {number} x1 
  * @param {number} x2 
@@ -20,7 +34,7 @@ const getRandom = (min, max)=>{
  * @returns number
  */
 
-const distance = (x1, x2, y1, y2)=>{
+const distance = (x1, y1, x2,  y2)=>{
     const dx = x1-x2;
     const dy = y1-y2;
 
