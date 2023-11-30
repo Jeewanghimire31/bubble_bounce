@@ -1,0 +1,16 @@
+.container{
+    margin: 1rem;
+    width: 500px;
+    height: 500px;
+    position: relative;
+    border: 1px solid #000;
+}
+
+.ball{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    border-radius: 50%;
+    background-color: red;
+}
+
